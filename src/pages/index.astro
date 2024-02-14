@@ -1,0 +1,101 @@
+---
+import "../global.css";
+---
+
+<!doctype html>
+<html lang="en" data-theme="valentine">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Открытка</title>
+    <link href="../global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="element-site">
+      <div class="card card-compact w-96 bg-base-100 shadow-xl card1">
+        <figure>
+          <img
+            style="width: 100%;"
+            src="https://img.freepik.com/premium-vector/cute-teddy-bear-with-a-red-hear-teddy-bear-with-hearts-illustration-for-valentine-s-day-or-birthday_423614-259.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Ця валентинка УЛЮБЛЕНІЙ МАМІ!</h2>
+          <div style="padding-top: 5%" class="card-actions justify-end">
+            <button class="btn btn-primary btn-block next-button" id="yesButton"
+              >Далі</button
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-compact w-96 bg-base-100 shadow-xl"
+        style="display: none;"
+      >
+        <div class="card-body">
+          <figure>
+            <img
+              style="width: 100%;"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgSEhUZGBgYGBwdGhgcGRoaGB4aHRwaGRkaGhwcIy8lHB4rIRgcJjgnKy8xNzU1HCQ7QDszPy40NTEBDAwMEA8QHhISHjYrJCs0NDQ0NDQ0NDQxNDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ0MTQ0NDQxNDQ0NP/AABEIAL8BCAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcBBAYCAwj/xABEEAACAQIEBAMFBQYEAgsAAAABAgADEQQSITEFBkFRImFxBxMygZEWkqGx0hQjQlLB0RVigvBDchczNDVTVJOis9Ph/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAIDBAEFBv/EACYRAAMAAgICAgICAwEAAAAAAAABAgMREiEEMRRRIkETMgVhsYH/2gAMAwEAAhEDEQA/ALmiIgCIiAIiIAiIgCJi8QDMREAREQBERAEREAREQBERAEREAREQDESM47xinhKLV6tyBYBVtmYkgAKCRc6zi29oOIvmGBGS+gNQh8u9yMtgfKRdzPtlkYrv+q2WPEheXuYaeLpe9S6EEhkYgOhG+YdBbW/aeKvNmCVjTOKpBg2UjOLA9idh59p3aIcXvWieifHD11dQ6MrqwurKQVI7gjQifadOCIiAIiIAiIgCIiAYkRzDx2lg6XvqxNr5VVQCzMbnKoJAvYE6kDSSOIrKiNUY2VVLMewAuT9BKVSs+PrtjMR8AJFOmRdVX+FbHTsT3bWQyXwWy3Fj5slcXzbxHEm+HKYemScpspZl2Fy4bX/lA9ZqjE8SFiMa1x3Nx9Ctj6GTOA4e1U2WwUbk7egt1khW4AwF0cMbbEWv6G8xPLb7RsWPHPTIfh3POLw7ouPVXpkgGqoAYDq1k0bcaZVPbsbKwGNStTWtSbMjqGVrEXU7GzAEehErLE0AQ1OoN7ggz4cmcdGArVcNiKhFDJnTNcgNcfAoufFmNwOq37mX4szfVFObAktyW9PLuBqSAPOVfjef8TiLpgsPkUgj3lTVhfqApyqQPNtfTWBqcGqVSWxeIqVCdSCxYXvewzXAF76AAdrSdZpkrnBVFkYvnzAU98QrXBIFNXqX8rqCAfUiRuJ9qGDW2Raz33sii3rnYfhOUocIopsinzYBj+M20oqNAqj0AEpfk/SLl4q/bJn/AKVsL/4GJ+7S/wDsn3w/tPwbA5lrJ5Mikn7rGQOQdh9BPL0Eb4kU+qg/nOfJf0S+LJ2nD+eMDVIVcQFY5fC6umraAAsoDG+mhM6RWB1BB9JTeI4PRcaoB5roZq0OF1qGuExL0yNcoYqpOu4HhO53HWWT5CfsrrxX+mXfNDjPFqWFpGvXbKi2GgLEkmwAA1Jlf8M9oVejlp4/DkjQe9Tf1YE2bTXQjbaRPMfEl4jjQqNfD0lGUjMA11BZrEAg5my7bL5yx5Vx2iqcNOtM3sVzxjsQzjBqlOndlV2ALW/hYljbNbWwUgXtra81xxjiwsf2tW11XJRt6E+7GnoZu4bDFiEpr5AAaAbdNhJY8Aa2jrf0NvrMrzU/Rq/ixz0zU4P7Q3R/dcSRUuBlqIpte9iXGY6dbj6Sw6NVWUMpBVgCCNiCLgjytKs4hgLg06qfUaj/ADKf6ibfs74u9Gs3DKpzKcz0XJ12DFAD0sGaw2IbptfizcumU5sKlcpPXtD8eOwyNslJ3Uf5mYqT/wC0SLk77SsEwfD4xVutPMlQ6aK5UITrsCT0/ikCpBFxqDsfKU51+R6f+OaeLS9kdicC7O3u3KJVQJWAtdlBuBqD1A/HuRNlOH0wuQIttOm9tr/WbMGVcma1ihNvXslPZ/jnpYp8DmJotTNRFIHhYMA9m3sb7G+oG2t7Llaez7BNUxdXGWPu0T3SN0ZiQz211Atva3i3uCJZc34t8Vs+e8nj/K+PozERLCgREQBExeLwBE+b1QoJYgAbkmwHzMhRzhgcwT9ro3OxzjKfLP8ADfyvGzumantIqsnDq5Qsp/di6kg2NamrC46EEgjqCROB4CgGHS3W52tqWN/7fKWvxXApiKD0WClaikbBgCdVYX0uDYg9wDKe4JUNEtg64yVUcjKb9QG0v3vcdwQZm8hNo1eK12ix+EoBSSwAuLnzPczaqVAoLMbAdZzvCuKZPA+q30Nz4fl1EgeaePtVf9nw1yTpobW01N+jfkJnT66LnL5dmOZeYEap7vDqTUPhv0vsCQetv/2R2F4JmPvMU2dz0ubD5jf02m5wrhi0Rfd2+Jj36hewm/OOtei2Z+wigCwAAGwGgHoIiJAkIiIOiIiAIiIBh0DAqwBB3BFx9JCYjgzo3vMI2Q2+Ak699TuOtjJyIVNEWtmOUOZaeY0qylKjELf+EkaEf5dZ3crPi/CxWGZfC6/CRYX7Bj/XpJPlTmkgHDYsEOoOUncjTw69dSfQSxNNdFNwyc5lQeBuviHyFiPzP1nFYhiuPwjoxVjVoglSQ1mqhWBI6FWKkdQSDpOg4ljy5NRyFVR30A3mjybgDi8d+0lc1DD3sxF0aoB4BqLZhnz6aiyH1ljTd9C3xx6ZaPEcClek9GqoZXWzD8QRfYggEHoQDKlxeDfBV/2Wu10b/s79GQWGU9QwzKDf8iJcs0eKcLpYmm1GugZGBGoFwejKejDcEagzXkhUtGXBnrDXJFV4jEIil6jBVHWeuEcJxHENaQ91hw1nqtozj+IU1sS2h3NhrvoROz4TyDhKDrUKvVdTdWqsGA7WWwXTobXE6xVA0AtK4wJds1Z/8hVrU9Grwzh9PD0loUVyogIVbk7ksbk6kkknXvN2Img84REQBERAOG555jq0nTB4Xw1KiF2qmxCJciwUg3Y2OvSw3vpyFM4tCXTHV85tqzZlJAsLq1xby/OSfOtMrxMM1rPhly+qs+b5zUmPNkpVpHs+H4+O8e6W2eOKcxYjGquDrLkCWasyMbVbaAZbDKpJDWudp8G4bRIymmlvTX67zaiU1bb2a8fjxjTSRP8As54k4etgajFlpqr0iSSQjEgoSdbAlbfPtJPm3k1MZarTb3WIW1qgBswGyuAdfJtxbtpIL2eUWbG4qsPgSmlO/dicx+mXX1Eskm2s3R+ULZ4Wb8cr4/ZR/FKuKwTGjiUzFgwp1AdGtYZlNvFbMLg2Oo8r/fgvDfdrncA1GuS3UA9Nfx9Z9OJYw47HVKrEmlQbLSFgPhNr9yCVZte422m+TMeRpPUmzHtynQiIlRcIiIAiIgCIiAIiIAiIgCRPG+HFx7yncVFta25H95LRCemca2RfLHB63Emb3lcJTpsodADnYHW2UWtcAjMToQdDaW3wfhVLDUxRoIEUa21JJO5YnUnzMqTCY1sBjErobUqrKtUWFspPj3FxYHOLW1Ftpc1GoGUMpuGAII2IIuCPlN+Hi1tHnZ+SrT9H2iIlxQIiIAiIgCIiAIiIBznN/L/7ZSAUhatNs1J+zWIKsbXykHUdwD0lcYbEtc06yGlVXRkcZTfut/iHmL/May6ZB8wctUMYB71bOt8lVSQ6HpYg6i+tjp89ZTkxKu/2a/G8qsL/ANFeTVxVdsyUaalqtRgqKLmxY2zNbUKL3PoZL1+UMfSJSm1Oun8Ls2Rht8QP9Cd/lOm5S5TGFzVa7LVxDH/rMuiLa2VL7bm5Fr3tsJRGCuX5G/N/kJ4fj7Zv8qcCXB0FpXzuSWqPYXZ2JLa2BIF7C/S00/aJxH3OBq2+KoBTGtj49GItqSFzH5TqJWXtOrl8ThcLc5Reoy6WJuQp9QquP9U1U+Mnkwnd9kRwbC+7oottSMx9Trb5bTegRPNb2z1EtIREQdETzVcKpZtlBJ9ALmRPHKTrw7/Ev2ooajL7ikqr8JLCzHcswGY9FtbWTjG79FWTLMeyYicpydzE1e9GsS1QAlW0F10uDbqL/T0nVzlw4emSi1c7QiZVSTYAk9hqZsfsNS2bI1r221+m8hols1omXUg2IIPY6GYnQInDc080VErGhQOQIbM1lYk6bAjQDX1na8QwbYR6CNXFeniFOSoQqurKtzcD4lYXIPQm3aWvDSnkUrPLrifSIiVF5q8Sw3vKbp1Km3qNROs9mPFfe4X3DH95h2KMp+LITdDa97WuvTVD2nOzxyVX9zxR6V7LiEawF7FlGcXtoLZamvn5zRgrVaM3kTudltxETaeeIiIAiIgCIiAIiIAiIgCYmYgGJUfNVQPxdgAb06SqfXKX07i1QfO8tyU7x3/vjE/8qf8Aw0pTm/qX+P8A3NuIiYD0hERANfiFEvSemN3RlHqQQJTeJR1Y03uCpIsehvYy7JG47gOHrNmqUlLHdhdSfUqdZdhyqNpmfPhd60cVyBhHauaoHhRWBbpmYWAHc9ZanDeHtVbsgPib+g85G8PwCoBToqqgnQKLXJ017mdzhKARFQdBr5nqYyVzrZyV/FPH9kHzDxdMBSQpSzF2yjXKNixzNYknTb+05s+0l/8Ayyf+of0Ts+YOELiqLUWOUkgq9s2Vgd7XF9LjfYmVJieA10xAwrJ43NksdGFz4ge3hJ76SSSI+yxuWuPLj1dKlEIyZdjmBDZrEEgEHSY4lw40zcXKfzdvIyQ5Y4EuEpBPCztrUcC2Y3JA16Lew+vWSmJoh0ZD/ELfPofkZCkmdmtM/OHNOEaniamYEBnLAkaEHXTvvPvydQZ8VSIBKoSxPQAAn5XP5yzeKcKpuxp10V8pIFxqOmh3F55wXD6VEEUkVAd7Df1O8tedcNa7Irx3y5b6NiIiZTYJDcVb3eJw1db5lqJsbXCuGy3G1wWHoZMyC5tJFJWBsQ9wet8rESUPVIryLcsvSZnyoG6qe6j8p9Z6Z5QiIgCIiAIiIAiIgCIiAIiIBiVFzZSCcXJF/wB7TVjfa+Qp4dNrU1+ZPpLdlce1PAlDh8euvu3COLfwtdla99LEFbW194O0ryrcstwvVoj4nmk4ZQw2YAj0IvPQF55x6s632bX7OBTLvcFjZB3t8RPlMUMNdWqPfIosLW1Y6Afjf5TPEMQGYKosiDKvn5+pmcTiPAlJbWXUkdWNz+F7SRNctL/f/DxgsLnJJ0RRdz5eXnpPg1rm219PTpNpcTlpGmu7m7Hy6D/feak5RF97b/8ADf4It6yeVz9AZ1TMBqTb1nKcHcLWQnrcfUECevaLh2fCXUE5HVmt/LZgSfIXko9GXIvyOo94v8w+onFcda3FcIb6ZN76f8Qf1nL4bgtN0Vw7+IX+JT6j4Z9Ty9T/AJ3+q/pkuSRdPi21tFrGso3ZfqIoV1cEowYA2JBvr2lUVOA0VUlmew11K/2nUezGgVw9SoRYPU08wqgH5XJHyM6mmU5cNY/Zt8dS1UnuAfwt/SaeFpBmCk2zaX87aTb4296zW6AD8NfzkdKn7L8a2kj6pTs+VtLNlY9tbGKtBkbK41BF7dvKe8XWDlXGjEWYeYAFxbv/AHjFV84VjfMBlPmASQfxtOly30YxeHKMVO24PdTsZznNqlqaIPiZ7Af6SPzInTVsRnRQ3xLcX6ldLAny1kF+zHE47D4ZbEKwZ97BV8bgldrqoUbasO8lC3S0U5XqO/Zc1BbKoO4AH4T6zAmZ6J44iIgCIiAIiIAiIgCIiAIiIBicRzvx/AtRqYOtVuzLYBVd8rgnKxZQQLMuo37ixkf7QeYXZ/8ADsIxDb12UsrKLK6oG00Ia5IO2nUzncDwWlT1tnb+ZrH8NgfOUZMqno0YsLr8mRfBuNoie7qEnKfCQL6fnOhw+KRxmpsGH++h1mWwyEWKKR2yiROI4Al81FmRhtqSP7/jMbc0/o3JNImokHhuLujini1y32fpba5toRfqJOKwIuDcHqNpxpokqYiInDuxOkweJTEU2o1Re6FXB2YHS485zcAxNaIVKpEPxDhuIwLkZTUoE6OBfe2jW1U+ums1xzFS2yvftZf1TscNxmogsSGH+a9/refT/GOvuk9bSe5ZKcuWVpHJYLh2Jx7ZQppUNy7DU26C+rH007zvK9SnhaQo0lC2WyKOnTMx6nr5mR1bjdRtiF9Bc/UyMJ6mHS9Ig1V1ujLMSSTqSbmYieatRUGZ2CjuTYSBP0eokHU4y7krhqea38RGmu2mlvnMDg1SprXrNrug2/O34SXHXtnOT/RK4nGIiszMPCL5QRmPkB3kx7MuGFnqcQqWvUzLTXqqBgGb5lQP9Pnpyyct0QNS5/1Af0nn7PhCXo1Xpv0ZWIOmo8S2O9vpLMdTL2VZZqp0XkIlc8p851vfDB8QAzMbJVsFvoSA1tDe1gRboDrvYwm2aVLaPPqXL0zMREkREREAREQBERAEREATEzMQCm6uvEsYSdQ5A72uPysBN2Y594a2FxX+IKM1OsVVwP4WyquulgGy3HmD3njD11dQ6G4P59Qexnn5parZ6WCk5R9IiJUXHwxeESouWooOmh6j0PSQqPUwjAVCXpHQEbj5HbrpedDPNSmGUqwuDuJ1Vro40Yo1VdQyG4I3/wB9Z7nNMr4NyVu1Jjr1I6AeR29Zv0uYqJ+Isvqt/wArzrn6Ob+yWiaacVon/ip8zb8596eKRjZXRj2DA/kZHTJbR9YjMO4mGcAXJAA3JItOaGzMTVfiNIamon3gfymtiOOUVByvmNtAAd+gvawnVLY2jax+OSkud/kBuT2kRQwlTEsKlYlUvomo2+nXrPXD8G9Z/wBorjTdF6aHqO2g9ZPSW0vXs5rZ4oUEQZUUKOwH+7z3ESJ0RE81aioCzsFA3JNh2gEHzU+QU6qmzo2ZW6grZgddNCAZd2DYlEJ1JVST5kC8qTlvh7Y/F06oUjD4dwxa9rutnQDzJCk+Vu8uITdglqezz/IpOtIzERLzOIiIAiIgCIiAIiIAiIgGvisMlRGp1FVlYWKsLgjzBlXcX5LxGDvWwRatTBu1K13AObZR8VvCNPFrtoZbExIVCr2Sm6l9FL4LjCOclT924Nij6G/z/I6ySnY8wcm4bF3Z0yVCD+8UkNciwLAaPaw37b6mV9xXhuN4eAa9q1C9s63Nu2YnVPnca2vtMt4Gu0bseea6fskImvgsYlVc1M37jYg9jNiZ2tGhM8YiirqUYXDCxmnheEU0TIVD6k3YAnX5TfiE2g0maD8GoH/hgehI/rNRuW6XR3HzX9MmoneT+znFEJ9mqf8AO/1X9MfZqn/PU+q/pk3EcqHFETS5forvmb/mb9IEw/AE94rrYItrpYm5Fze5PmPpJeI5McUALaCIicOiLTVx3EadEXqN6AC5P9vnPjw7hOPx4zUrUKO2dja5G9gPE34Dz3k4iq9ELyTK2zzjeMIhyUwajk2CLcm/yBv6CSPBuTsRjLVcazUaZN1o2IYjw2JB+C+o8XiuNrTteA8oYXCHNTQtU0/eOc76dV0st7m+UDf0nRTXGBT7MeTyHXSNXh+Ap0EFKiioi7KosPMnufMzciJeZhERAEREAREQBERAEREAREQBERAE8OoIsRcdp7iAVzzNyAMzYrAEo4u3uQBkZhrZNRkJPQ+H0nN8M4qHJp1FKVVJBQgg6eR1B8jLolTe0lUGPw4VArlVLPcgsC7LYgaaWOu+ttrTPmxprZpwZa3xZ7iImI3iIiDoiIgCIiAJF4ribs/uMIhq1D/KM1rAltOunW9tZI4hbow7qR9QZM+yahROHasEX3wqOjvl8drI4XMdctmU2H9JbhhUyjNbidnvln2fJTZcRjCatbwtlvZEf4uh8ZB018PlO+AiJumVK0jzqp09szERJHBERAEREAREQBERAEREAREQBERAEREAREQDE4XmjlavicbTxK+692lML4mYOT+8O2Qjdx16TuokalUtM7NOXtHDfZWv3T7x/TH2Vr90+8f0zuYlXx4Lvk2cN9la/dPvN+mPsrX7p95v0zuYj48j5NnDfZWv3T7zfpj7K1+6feb9M7mI+PI+TZw32Vr90+836Y+ytfun3m/TO5iPjyPk2cM3Kde3xJ95v0zd9n/L9XBUalKsUJasXGRmYZciIL5gNboZ1kSc4pl7RGs1WtMzERLCoREQBERAEREAREQBERAP/9k="
+              alt="Shoes"
+            />
+          </figure>
+          <h2 class="card-title">Ти сама найкраща мама на світі ❤️</h2>
+          <div style="padding-top: 5%" class="card-actions justify-end">
+            <button class="btn btn-primary btn-block next-button" id="yesButton"
+              >Далі</button
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-compact w-96 bg-base-100 shadow-xl"
+        style="display: none;"
+      >
+        <figure>
+          <img
+            style="width: 100%;"
+            src="https://bestflowers.com.ua/image/cache/800-800/data/demo/Gift/BF-24.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Я тебе дуже люблю!!!!❤️</h2>
+          <div style="padding-top: 5%" class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const nextButtons = document.querySelectorAll(".next-button");
+  const cards = document.querySelectorAll(".card");
+
+  nextButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      cards[index].style.display = "none";
+      const nextIndex = (index + 1) % cards.length; // Loop back to the first card if reaching the end
+      cards[nextIndex].style.display = "block";
+    });
+  });
+
+</script>
+
+<style>
+  .element-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  audio {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+</style>
